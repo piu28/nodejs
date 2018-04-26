@@ -53,7 +53,11 @@ function create_es_repo() {
             settings: {
                 bucket: 'dev-es-backup',
                 region: 'ap-south-1',
+<<<<<<< HEAD
                 role_arn: 'arn:aws:iam::xxxxxxx:role/rolename',
+=======
+                role_arn: 'arn:aws:iam::xxxxx:role/rolename',
+>>>>>>> 2205931f08646dc2e85c91ca94b09c840dde7e3d
             },
         },
     }, function(error) {
