@@ -31,7 +31,7 @@ es.snapshot.createRepository({
 	},
 }, function (error) {
   if (error) {
-    console.trace('Inable to create ES Snapshot Repository!');
+    console.trace('Unable to create ES Snapshot Repository!');
   } else {
     console.log('Successfuly Created Repo.');
   }
