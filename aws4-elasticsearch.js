@@ -1,7 +1,7 @@
 var AWS = require("aws-sdk");
 AWS.config.region = "ap-south-1";
 var es = require('elasticsearch').Client({
-    hosts: 'https://vpc-dev-k8s-es-mcjleokiep5ms3a3h4wy4atm3e.ap-south-1.es.amazonaws.com:443',
+    hosts: 'https://xxxxxxxxxxxx.ap-south-1.es.amazonaws.com:443',
     connectionClass: require('http-aws-es')
 });
 esSnapshotS3RepoName = 'es-backup-s3';
@@ -51,9 +51,9 @@ function create_es_repo() {
         body: {
             type: 's3',
             settings: {
-                bucket: 'digit-dev-k8s-es-backup',
+                bucket: 'dev-es-backup',
                 region: 'ap-south-1',
-                role_arn: 'arn:aws:iam::731760562474:role/service-role/CognitoAccessForAmazonES',
+                role_arn: 'arn:aws:iam::xxxxx:role/rolename',
             },
         },
     }, function(error) {
